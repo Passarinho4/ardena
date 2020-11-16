@@ -5,7 +5,7 @@ $( document ).ready(function() {
     }
 
     function preparePreviewLink(obj) {
-        return "http://res.cloudinary.com/ardenatg/image/upload/c_scale,w_450/v" + obj.version + "/" + obj.public_id + "." + obj.format;
+        return "https://res.cloudinary.com/ardenatg/image/upload/c_scale,w_450/v" + obj.version + "/" + obj.public_id + "." + obj.format;
     }
 
     function prepareId(category) {
@@ -23,7 +23,7 @@ $( document ).ready(function() {
         "Zegary i lampy"];
 
     for (var i = 0; i < 8; i++) {
-        $.getJSON("http://res.cloudinary.com/ardenatg/image/list/" + categories[i] + ".json",
+        $.getJSON("https://res.cloudinary.com/ardenatg/image/list/" + categories[i] + ".json",
             function(j) {
             return function(data) {
 
