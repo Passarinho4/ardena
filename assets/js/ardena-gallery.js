@@ -5,7 +5,7 @@ $(document).ready(function () {
     }
 
     function preparePreviewLink(obj) {
-        return "http://res.cloudinary.com/ardenatg/image/upload/c_scale,w_450/v" + obj.version + "/" + obj.public_id + "." + obj.format;
+        return "https://res.cloudinary.com/ardenatg/image/upload/c_scale,w_450/v" + obj.version + "/" + obj.public_id + "." + obj.format;
     }
 
     function prepareId(category) {
@@ -160,7 +160,7 @@ $(document).ready(function () {
 
     for (var j = 0; j < categories.length; j++) {
 
-        $.getJSON("http://res.cloudinary.com/ardenatg/image/list/" + categories[j] + ".json",
+        $.getJSON("https://res.cloudinary.com/ardenatg/image/list/" + categories[j] + ".json",
             function (z) {
                 return function (data) {
                     for (var k = 0; k < data.resources.length; k++) {
